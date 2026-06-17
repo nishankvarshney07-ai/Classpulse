@@ -6,9 +6,9 @@ export const teacher = {
 }
 
 export const activeClassroom = {
-  name: 'CS 201 — Data Structures',
-  section: 'Section A · Room 304',
-  students: 48,
+  name: 'DSA Live Session',
+  section: 'KIET IT Department',
+  students: 52,
 }
 
 export const quickStats = [
