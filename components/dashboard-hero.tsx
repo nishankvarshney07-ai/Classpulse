@@ -4,6 +4,7 @@ import { toast } from 'sonner'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 
+import Link from 'next/link'
 export function DashboardHero() {
   
 
@@ -29,23 +30,15 @@ export function DashboardHero() {
       </div>
 
       <div className="flex flex-wrap gap-3">
-        <Button
-          size="lg"
-          onClick={() =>
-            toast.success('Create Classroom clicked')
-          }
-        >
-          + Create Classroom
+        <Button asChild size="lg">
+         <Link href="/create-classroom">
+               + Create Classroom
+         </Link>
         </Button>
-
-        <Button
-          size="lg"
-          variant="outline"
-          onClick={() =>
-            toast.success('Join Classroom clicked')
-          }
-        >
+        <Button asChild size="lg" variant="outline">
+          <Link href="/join-classroom">
           Join Classroom
+         </Link>
         </Button>
       </div>
     </div>

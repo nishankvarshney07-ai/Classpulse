@@ -9,7 +9,6 @@ import {
   Users,
   ChartLine,
   Sparkles,
-  Settings,
   Activity,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -22,7 +21,6 @@ const nav = [
   { label: 'Students', href: '/students', icon: Users },
   { label: 'Analytics', href: '/analytics', icon: ChartLine },
   { label: 'AI Reports', href: '/ai-reports', icon: Sparkles },
-  { label: 'Settings', href: '/settings', icon: Settings },
 ]
 
 export function AppSidebar() {
